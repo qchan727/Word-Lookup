@@ -8,7 +8,7 @@ require("dotenv").config({
 });
 
 const app = express();
-const portNumber = process.env.PORT || 3030;
+const PORT = process.env.PORT || 3030;
 
 const transporter = nodemailer.createTransport({
    service: "hotmail",
@@ -28,7 +28,7 @@ const databaseAndCollection = {
    collection: collectionName,
 };
 
-app.listen(portNumber);
+app.listen(PORT);
 
 app.set("views", path.resolve(__dirname, "templates"));
 app.set("view engine", "ejs");
