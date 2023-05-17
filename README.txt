@@ -1,6 +1,7 @@
 By: Queenie Chan (118030722)
 
 Description:
+https://word-lookup.onrender.com
 A dictionary app where you can:
 (1) look up a word
 (2) get a random word
