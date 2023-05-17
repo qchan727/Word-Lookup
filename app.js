@@ -37,9 +37,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 process.stdin.setEncoding("utf8");
 
-process.stdout.write(
-   `Web server started and running at http://localhost:${portNumber}\nStop to shutdown the server: `
-);
+// process.stdout.write(
+//    `Web server started and running at http://localhost:${PORT}\nStop to shutdown the server: `
+// );
 
 /******************************************/
 // APIS
