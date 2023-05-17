@@ -1,0 +1,20 @@
+{
+  "name": "word-lookup",
+  "version": "1.0.0",
+  "description": "Dictionary lookup",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Queenie Chan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.4.0",
+    "nodemailer": "^6.9.2",
+    "path": "^0.12.7"
+  }
+}

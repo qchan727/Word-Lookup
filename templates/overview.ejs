@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="/css/general.css" rel="stylesheet">
+
+   <title>Overview</title>
+</head>
+
+<body>
+   <nav class="main-nav">
+      <a href="/" class="nav-title">Word-lookup</a>
+      <div class="nav-links">
+         <ul class="links-list">
+            <li class="link">
+               <a href="/dictionary">Dictionary</a>
+            </li>
+            <li class="link">
+               <a href="/random-word">Random Word</a>
+            </li>
+            <li class="link">
+               <a href="/fav-words">Fav Words</a>
+            </li>
+         </ul>
+         <button class="btn login-btn">Get Word</button>
+         <div class="modal hidden">
+            <ion-icon class="close-modal" name="close-outline"></ion-icon>
+            <form class="login-form" method="post" action="/">
+               <span class="login-form-title">Get word with email</span>
+               <div class="email">
+                  <label for="email">Email:</label>
+                  <input id="email" name="email" type="email">
+               </div>
+               <input id="submit-btn" type="submit">
+            </form>
+         </div>
+         <div class="overlay hidden"></div>
+      </div>
+   </nav>
+   <main class="main-container">
+      <form class="search-word" action="/dictionary" method="get">
+         <input id="search-bar" type="text" placeholder="lookup" name="word">
+         <button class="search-btn">
+            <ion-icon class="search-icon" name="search-outline">
+            </ion-icon>
+         </button>
+      </form>
+   </main>
+   <footer class="footer-container">
+      <span class="copyright">&#169;<span class="year">2022</span> Queenie Chan &vert; All rights reserved.</span>
+   </footer>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="./script.js" defer></script>
+</body>
+
+
+</html>

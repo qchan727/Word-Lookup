@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link href="./css/general.css" rel="stylesheet">
+   <link href="./css/dictionary.css" rel="stylesheet">
+   <link href="./css/word-of-the-day.css" rel="stylesheet">
+
+   <title>Word of the day</title>
+</head>
+
+<body>
+   <nav class="main-nav">
+      <a href="/" class="nav-title">Word-lookup</a>
+      <div class="nav-links">
+         <ul class="links-list">
+            <li class="link">
+               <a href="/dictionary">Dictionary</a>
+            </li>
+            <li class="link">
+               <a href="/random-word">Random Word</a>
+            </li>
+            <li class="link">
+               <a href="/fav-words">Fav Words</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <main class="main-container">
+      <h2 class="secondary-heading">Random Word
+      </h2>
+      <div class="def-container">
+         <div class="word-save">
+            <span class="word">
+               <%- word %>
+            </span>
+            <!-- <button class="btn save-btn">Save</button> -->
+         </div>
+         <div class="word-info">
+            <span class="part-of-speech">
+               <%- partOfSpeech %>
+            </span>
+            <span>&#124;</span>
+            <span class="pronunciation">"<%- pronunciation %>"</span>
+            <span>&#124;</span>
+            <span class="syllable">
+               <%- syllables %>
+            </span>
+         </div>
+         <hr>
+         <%- defList %>
+      </div>
+   </main>
+   <footer class="footer-container--dic">
+      <span class="copyright">&#169;<span class="year">2022</span> Queenie Chan &vert; All rights reserved.</span>
+   </footer>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="./script.js"></script>
+</body>
+
+</html>

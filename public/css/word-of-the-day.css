@@ -1,0 +1,14 @@
+.secondary-heading {
+   color: #4b390b;
+   font-size: 3.2rem;
+   font-weight: 400;
+   letter-spacing: -0.1rem;
+}
+
+.main-container {
+   align-items: center;
+}
+
+.def-container {
+   border: 0.4rem solid #2563eb;
+}
