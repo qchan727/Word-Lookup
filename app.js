@@ -8,7 +8,7 @@ require("dotenv").config({
 });
 
 const app = express();
-const portNumber = 3000;
+const portNumber = process.env.PORT || 3030;
 
 const transporter = nodemailer.createTransport({
    service: "hotmail",
